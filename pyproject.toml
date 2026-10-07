@@ -1,0 +1,19 @@
+[project]
+name = "product-manager"
+version = "0.1.0"
+description = "Учебное приложение для учёта продуктов"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["flet==1.0.3"]
+
+[dependency-groups]
+dev = [
+    "flet-cli==1.0.3",
+    "flet-desktop==1.0.3",
+]
+
+[tool.flet]
+product = "Менеджер продуктов"
+
+[tool.flet.app]
+path = "src"
